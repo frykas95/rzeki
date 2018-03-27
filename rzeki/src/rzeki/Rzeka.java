@@ -9,28 +9,30 @@ package rzeki;
  *
  * @author Student
  */
-public class Morze {
+public class Rzeka {
     
     private String nazwa;
-    private double powierzchnia;
+    private int dlugosc;
     
-    public Morze(String nazwa, double powierzchnia)
+    public Rzeka(String nazwa, int dlugosc)
     {
         this.nazwa = nazwa;
-        this.powierzchnia = powierzchnia;
+        this.dlugosc = dlugosc;
     }
     
-    @Override 
+    @Override
     public String toString() {
-        return "Morze(" + "nazwa= " + nazwa +" powierzchnia= " + powierzchnia;
+        return "Rzeka(" + "nazwa=" + nazwa + "dlugosc=" + dlugosc;
     }
     
-    public boolean equals(Morze m)
+    public boolean equals(Rzeka r)
     {
-        return nazwa.equals(m.nazwa);
-    }    
+        return nazwa.equals(r.nazwa);
+    }
     
-    
-            
+    public int getDlugosc() 
+    {
+        return dlugosc;
+    }
     
 }

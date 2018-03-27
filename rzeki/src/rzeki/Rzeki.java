@@ -67,7 +67,7 @@ public class Rzeki {
                 najdluzsza = rz;
             }
         }
-        System.out.println("Najdluzsza rzeka to:"+najdluzsza);
+        System.out.println("Najdluzsza rzeka to: "+najdluzsza);
         
         TreeSet<Rzeka> set = new TreeSet();
         for(Morze m : map.keySet())

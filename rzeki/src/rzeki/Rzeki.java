@@ -7,6 +7,7 @@ package rzeki;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -76,6 +77,26 @@ public class Rzeki {
             set.addAll(list);
         }
         System.out.println(set);
+        
+        
+        TreeSet<Rzeka> set2; 
+        set2 = new TreeSet {
+            new Comparator<Rzeka>() {
+
+            @Override
+            public int compare(Rzeka rz1, Rzeka rz2) {
+                return rz1.getNazwa().CompareTo(rz2.getNazwa());
+            }
+                
+            }
+    };
+        for(Morze m : map.keySet())
+        {
+            List<Rzeka> list = map.get(m);
+            set2.addAll(list);
+        }
+        System.out.println(set2);
+        
     }
     
 }
